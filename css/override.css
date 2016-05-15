@@ -2,11 +2,11 @@
 
 /* override styles */
 
-#content {
-  margin-top: 20px;
+h2 {
+  text-align: left;
 }
 
-h2, .centre-align {
+.centre-align {
   text-align: center;
 }
 
@@ -14,22 +14,32 @@ h2, .centre-align {
     background-color: transparent;
 }
 
-.right-align {
-    text-align: right;
-    direction: rtl;
-}
-
 .avatar {
-  width: 350px;
-  height: 350px;
   border-radius: 100%;
-  background: #998590 no-repeat center;
-  background-size: cover;
-  background-image: url('../img/avatar.png');
   margin: 10px auto;
-  border: 3px solid #87919F;
 }
 
 #footer small {
   color: #87919F;
+}
+
+.title-bar {
+  background: #C9DEF0;
+}
+
+/* apply only for non-mobile */
+@media screen and (min-width: 40em) {
+  h2, .centre-align {
+    text-align: center;
+  }
+
+  .right-align {
+    text-align: right;
+    direction: rtl;
+  }
+
+  #content {
+    margin-top: 20px;
+    padding: 0 0 0 100px;
+  }
 }
