@@ -29,15 +29,17 @@ h2 {
   h2, .centre-align {
     text-align: center;
   }
+  
+  h3 {
+    font-size: 1.6rem;
+  }
 
+  h4 {
+    font-size: 1.3rem;
+  }
   .right-align {
     text-align: right;
     direction: rtl;
-  }
-
-  #content {
-    margin-top: 20px;
-    padding: 0 0 0 100px;
   }
 }
 
