@@ -10,10 +10,6 @@ h2 {
   text-align: center;
 }
 
-.top-bar {
-    background-color: transparent;
-}
-
 .avatar {
   border-radius: 100%;
   margin: 10px auto;
@@ -23,8 +19,9 @@ h2 {
   color: #87919F;
 }
 
-.title-bar {
+.top-bar, .top-bar ul, .title-bar {
   background: #C9DEF0;
+  width: 100%;
 }
 
 /* apply only for non-mobile */
@@ -41,5 +38,12 @@ h2 {
   #content {
     margin-top: 20px;
     padding: 0 0 0 100px;
+  }
+}
+
+/* apply only for mobile */
+@media only screen and (max-width: 40em) {
+  .menu-text {
+    display: none !important;
   }
 }
