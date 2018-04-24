@@ -24,12 +24,21 @@ h2 {
   width: 100%;
 }
 
+#skills ul {
+  list-style-type: circle;
+}
+
+#skills .medium-6:last-of-type ul {
+  list-style: none;
+  margin-left: 0;
+}
+
 /* apply only for non-mobile */
 @media screen and (min-width: 40em) {
   h2, .centre-align {
     text-align: center;
   }
-  
+
   h3 {
     font-size: 1.6rem;
   }
